@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shero</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+</head>
+<body>
+    <header>
+        <h1>Add color to your<br>masterpiece</h1>
+        <button class="btn">Shop Now</button>
+    </header>
+
+    <main>
+        <section class="product">
+            <div class="product-wrapper">
+                <ul class="product-list">
+                    <li class="product-item">
+                        <img src="img/21.png" alt="Bobbin" class="product-image">
+                        <p class="product-name">BOBBIN</p>
+                    </li>
+                    <li class="product-item">
+                        <img src="/img/22.png" alt="Glide" class="product-image">
+                        <p class="product-name">GLIDE</p>
+                    </li>
+                    <li class="product-item">
+                        <img src="/img/23.png" alt="Magnetic Core Bobbin" class="product-image">
+                        <p class="product-name">MAGNETIC CORE BOBBIN</p>
+                    </li>
+                    <li class="product-item">
+                        <img src="img/23.png" alt="Premium Stabilizer" class="product-image">
+                        <p class="product-name">PREMIUM STABILIZER</p>
+                    </li>
+                    <li class="product-item">
+                        <img src="img/24.png" alt="Thread" class="product-image">
+                        <p class="product-name">THREAD</p>
+                    </li>
+                </ul>
+            </div>        
+        </section>
+
+        <section class="featured-product">
+            <div class="glide">
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <span class="material-icons">chevron_left</span>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <span class="material-icons">chevron_right</span>
+                    </button>
+                </div>
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="img/fp1.png" alt="Embroidery Stabilizer" class="featured-image">
+                            <p class="featured-name">EMBROIDERY STABILIZER</p>
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/fp2.png" alt="Cubbie Grey Elephant" class="featured-image">
+                            <p class="featured-name">CUBBIE GREY ELEPHANT</p>
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/fp3.png" alt="Kimberbell Cup of Cheer" class="featured-image">
+                            <p class="featured-name">KIMBERBELL CUP OF CHEER</p>
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/fp4.png" alt="Kimberbell Two Scoops" class="featured-image">
+                            <p class="featured-name">KIMBERBELL TWO SCOOPS</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about-us">
+                <h3>ABOUT US</h3>
+                <p>
+                    Hab+Dash is a division of the filament technologies company, Fil-Tec, Inc. and is a proud U.S.A. manufacturer of sewing threads and pre-wound bobbins. Our wholesale site is dedicated to offering our manufactured products to commercial embroiderers, long-arm quilters, and retail sewing shops. In addition to the products we manufacture, we have sourced the best products and accessories to benefit our customers.
+                </p>
+                <div class="footer-bottom">
+                    <p>© 2024 Hab+Dash. All rights reserved.</p>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>SUPPORT</h3>
+                <ul>
+                    <li><a href="#">Stitch Rewards</a></li>
+                    <li><a href="#">Core Return Program</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Online Dealers</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-section">
+                <h3>USEFUL LINKS</h3>
+                <ul>
+                    <li><a href="#">Digital Color Card</a></li>
+                    <li><a href="#">Which Bobbin Fits?</a></li>
+                    <li><a href="#">Color Conversion</a></li>
+                    <li><a href="#">Stabilizer Applicatons</a></li>
+                    <li><a href="#">Selecting a Stabilizer</a></li>
+                    <li><a href="#">New Site Features</a></li>
+                    <li><a href="#">Institute of Heraldry</a></li>
+                    <li><a href="#">Kimberbell Solids</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-section newsletter">
+                <h3>Newsletter Sign Up</h3>
+                <p>Subscribe our newsletter to unlock exclusive access to promotions, new product launches, and more!</p>
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+    </footer>    
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            perView: 3,
+            gap: 20,
+            breakpoints: {
+                1024: { perView: 2 },
+                768: { perView: 1 },
+                480: { perView: 1 }
+            }
+        }).mount();
+    </script>
+</body>
+</html>
